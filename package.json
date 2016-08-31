@@ -1,0 +1,22 @@
+{
+  "name": "Firebase-TodoList",
+  "version": "0.0.0",
+  "description": "Todo list with angular and firebase for learning purposes.",
+  "main": "src",
+  "dependencies": {
+    "webpack": "~1.13.2",
+    "angular": "~1.5.8",
+    "install": "~0.8.1",
+    "angular-aria": "~1.5.8",
+    "angular-animate": "~1.5.8",
+    "angular-material": "~1.1.0"
+  },
+  "devDependencies": {
+    "angular": "~1.5.8"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Ivan Pauletti",
+  "license": "BSD-2-Clause"
+}
