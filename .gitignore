@@ -166,7 +166,7 @@ jspm_packages
 .node_repl_history
 
 
-# Bower
+### Bower #
 bower_components
 .bower-cache
 .bower-registry
