@@ -9,16 +9,32 @@
 </head>
 <body ng-app="app">
 
-    <div ng-controller="MainController">
+    <div ng-controller="MainController" class="layout-align-space-around-center layout-row flex" >
 
-        {{todo}}
+
+        <div class="md-whiteframe-1dp layout-margin layout-padding flex-80">
+            <h1>TODO List</h1>
+
+            <md-list>
+            <md-subheader class="md-no-sticky">Checkbox with Secondary Action</md-subheader>
+            <md-list-item ng-repeat="item in todo.items">
+                <md-checkbox ng-model="message.selected"></md-checkbox>
+                <p>{{item}}</p>
+            </md-list-item>
+            </md-list>
+        </div>
 
     </div>
     <script src="../node_modules/firebase/firebase.js"></script>
+
     <script src="../node_modules/angular/angular.js"></script>
+    <script src="../node_modules/angularfire/dist/angularfire.min.js"></script>
     <script src="../node_modules/angular-aria/angular-aria.js"></script>
     <script src="../node_modules/angular-animate/angular-animate.js"></script>
     <script src="../node_modules/angular-material/angular-material.js"></script>
+
+
+
 
     <script src="js/app.js"></script>
 </body>
