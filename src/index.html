@@ -16,12 +16,13 @@
             <h1>TODO List</h1>
 
             <md-list>
-            <md-subheader class="md-no-sticky">Checkbox with Secondary Action</md-subheader>
-            <md-list-item ng-repeat="item in todo.items">
-                <md-checkbox ng-model="message.selected"></md-checkbox>
-                <p>{{item}}</p>
+            <md-subheader class="md-no-sticky">Uncompleted</md-subheader>
+            <md-list-item ng-repeat="item in todo.items | filter:isDone:false">
+                <md-checkbox ng-model="item.isDone"></md-checkbox>
+                <p>{{item.description}}</p>
             </md-list-item>
             </md-list>
+            <md-subheader class="md-no-sticky">Completed</md-subheader>
         </div>
 
     </div>
